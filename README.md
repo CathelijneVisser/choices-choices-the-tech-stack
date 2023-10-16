@@ -14,20 +14,16 @@ Dit project is gemaakt met de volgende technologiën:
 * HTML
 * CSS
 * JavaScript
-* Svelte
-* Sveltekit
-* Node.js
 * Chart.js
 * Mapbox
-* Hygraph
+
  
 ## Installatie 🎛️
 
 1. Clone deze repository naar je code editor.
 2. npm install
-3. npm install graphql-request graphql
-4. npm install chart.js
-5. npm install mapbox
+3. npm install chart.js
+4. npm install mapbox
    
 ## Gebruik 💻
 
@@ -38,8 +34,6 @@ Dit dashboard is bedoeld voor iedereen die interesse heeft in de Ocean Cleanup e
 Chartjs grafieken:
 * https://www.chartjs.org/
 
-API & Hygraph data koppelen:
-* https://kit.svelte.dev/docs/hooks#server-hooks
 
 ## Licentie
 
