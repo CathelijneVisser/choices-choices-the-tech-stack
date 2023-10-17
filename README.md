@@ -1,27 +1,40 @@
-# CurrentDirectory
+# Ocean Cleanup Dashboard
+![image](https://github.com/mcphendriks/the-ocean-cleanup/assets/101579892/97f3cd13-fff6-42f2-89fc-c6d8bb57cf76)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+## Inhoudsopgave 
 
-## Development server
+## Beschrijving 📖
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+De Ocean Cleanup is organisatie die als doel heeft de oceaan afvalvrij te maken, dit doen ze onder andere door het plaatsen van interceptors in de oceaan en in de riviermondingen. Deze interceptors vangen het afval op. De Ocean Cleanup wil mensen informeren over wat ze aan het doen zijn. Daarom hebben wij voor de Ocean Cleanup een dashboard gemaakt waarin je allerlei informatie kan vinden over de interceptors. Deze opdracht is gemaakt voor de opleiding Frontend Design & Development aan de HVA.
 
-## Code scaffolding
+## Kenmerken 🛠️
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Dit project is gemaakt met de volgende technologiën:
 
-## Build
+* HTML
+* CSS
+* JavaScript
+* Chart.js
+* Mapbox
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ 
+## Installatie 🎛️
 
-## Running unit tests
+1. Clone deze repository naar je code editor.
+2. npm install
+3. npm install chart.js
+4. npm install mapbox
+   
+## Gebruik 💻
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Dit dashboard is bedoeld voor iedereen die interesse heeft in de Ocean Cleanup en kan gebruikt worden om informatie in te zien over de interceptors, zoals bijvoorbeeld hoeveel afval een interceptor uit het water heeft gehaald.
 
-## Running end-to-end tests
+## Bronnen 📻
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Chartjs grafieken:
+* https://www.chartjs.org/
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Licentie
+
+This project is licensed under the terms of the [MIT license](https://github.com/fdnd-task/lose-your-head-the-client-case/blob/main/LICENSE).
