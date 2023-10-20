@@ -1,18 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { Route, RouterModule } from '@angular/router';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
+
+const routes: Route[] = [
+  {path: 'first', component: FirstComponent},
+  {path: 'second', loadChildren: () => import('./second/second.module').then(m => m.SecondModule)}
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HomeComponent
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
