@@ -1,1 +1,134 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Proxima', sans-serif;
+}
+
+:root {
+    --darkBlue: #143653;
+    --trashRemovedBackground: white;
+    --lightBlue: #5cc8de;
+    --whiteColor: #ffffff;
+    --lightGray: #f7f7f7;
+    --accentGray: rgb(228, 228, 228);
+    --textColor: #143653;
+    --boxShadow: rgba(128, 128, 128, 0.132);
+    --color: rgb(212, 212, 212);
+    --textSize: 1.2rem;
+    --iconSize: 2rem;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--lightGray);
+    color: var(--textColor);
+    position: relative;
+}
+
+/***********************************************************************************************************************************/
+/* Grid */
+/***********************************************************************************************************************************/
+
+.container2 {
+    margin: 8rem 1.5rem 1.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    grid-template-areas:
+        'menu menu'
+        'header-dashboard header-dashboard'
+        'box-1 box-2'
+        'dashboard-info dashboard-info'
+        'map map'
+        'share share'
+        'box-3 box-3'
+        'box-4 box-4'
+        'grafiek grafiek'
+        'more more';
+}
+
+.panel {
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background-color: var(--whiteColor);
+    box-shadow: var(--boxShadow) 0px 0px 8px;
+    transition: 0.2s;
+}
+
+/* Grid areas */
+.header-dashboard {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header-dashboard;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.grafiek {
+    grid-area: grafiek;
+}
+
+.map {
+    grid-area: map;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--whiteColor);
+    box-shadow: var(--boxShadow) 0px 0px 8px;
+    transition: 0.2s;
+}
+
+.box-3 {
+    grid-area: box-3;
+}
+
+.box-4 {
+    grid-area: box-4;
+}
+
+.share {
+    grid-area: share;
+}
+
+.more {
+    grid-area: more;
+}
+
+
+/***********************************************************************************************************************************/
+/* Text */
+/***********************************************************************************************************************************/
+
+h1 {
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--darkBlue);
+}
+
+h2 {
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--darkBlue);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: var(--textColor);
+    margin-top: 0.5rem;
+    font-family: 'Proxima', sans-serif;
+
+}

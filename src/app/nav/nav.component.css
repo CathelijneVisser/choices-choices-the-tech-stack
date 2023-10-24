@@ -1,0 +1,132 @@
+/***********************************************************************************************************************************/
+/* Nav */
+/***********************************************************************************************************************************/
+
+ul,
+li {
+    list-style: none;
+}
+
+ul{
+    padding-left:2rem;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5.5rem;
+    background-color: var(--whiteColor);
+    box-shadow: var(--boxShadow) 0px 0px 8px;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+    height: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+nav img {
+    left: 0;
+    top: 0;
+    width: 11rem;
+    height: 100%;
+    padding: 0rem;
+}
+
+nav a {
+    text-align: center;
+    color: var(--darkBlue);
+    font-size: 1.5rem;
+}
+
+.active {
+    color: var(--lightBlue);
+}
+
+/* Breakpoints medium screen */
+@media (min-width:992px) {
+/* Nav */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100vh;
+    box-shadow: var(--boxShadow) 0px 0px 8px;
+}
+
+nav img {
+    width: 20rem;
+    height: auto;
+}
+
+nav {
+    height: 100%;
+    flex-direction: column;
+    justify-content: left;
+    gap: 6rem;
+    overflow: hidden;
+}
+
+nav a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+nav a:hover {
+    color: var(--lightBlue);
+}
+
+.active {
+    color: var(--lightBlue);
+}
+}
+
+/* Breakpoints large screen */
+@media (min-width:1200px) {
+nav a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+nav a span {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+nav a:hover {
+    color: var(--lightBlue);
+}
+
+.active {
+    color: var(--lightBlue);
+}
+}

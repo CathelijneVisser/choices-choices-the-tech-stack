@@ -3,22 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { Route, RouterModule } from '@angular/router';
-import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
+import { InfoTextComponent } from './info-text/info-text.component';
+import { NavComponent } from './nav/nav.component';
 
-const routes: Route[] = [
-  {path: 'first', component: FirstComponent},
-  {path: 'second', loadChildren: () => import('./second/second.module').then(m => m.SecondModule)}
-]
+// const routes: Route[] = [
+//   {path: 'first', component: FirstComponent}
+// ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent
+    InfoTextComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    // RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
