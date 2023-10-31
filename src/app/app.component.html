@@ -1,4 +1,27 @@
-<div class="container2">
-<app-nav></app-nav>
-<app-info-text></app-info-text>
-</div>
+
+<section class="main">
+  
+    <div class="container2">
+        <!-- Blue line -->
+        <div class="menu">
+            <div class="line"></div>
+        </div>
+
+        <!-- Title + Searchbar -->
+        <section class="header-dashboard">
+
+            <h1>Dashboard</h1>
+            <form class="search" action="/" method="GET">
+                <input type="text" name="search" placeholder="Search..">
+                <input type="submit" name="search-button" aria-label="search button" class="search-button">
+                    <!-- voeg een zoekicoon toe -->
+            </form>
+        </section>
+        <app-nav></app-nav>
+        <app-trash-removed-total></app-trash-removed-total>
+        <app-trash-removed-month></app-trash-removed-month>
+        <app-info-text></app-info-text>
+        <map></map>
+        <app-system-status></app-system-status>
+    </div>
+</section>
